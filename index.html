@@ -48,7 +48,7 @@
   <script>
     async function fetchLocation() {
       try {
-        const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vShjWMslaQLXn8oLMMQyFutX6v_yQ_CR4VLFSdVEd08twcoQtKvRFkXKHqGu_y0RiHqgcBaXBtdUHuX/pubhtml");
+        const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vShjWMslaQLXn8oLMMQyFutX6v_yQ_CR4VLFSdVEd08twcoQtKvRFkXKHqGu_y0RiHqgcBaXBtdUHuX/pub?output=csv");
         const text = await response.text();
         const rows = text.split("\n");
         const location = rows[0]; // First cell (A1)
