@@ -5,6 +5,12 @@
   <title>Location Update</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    .logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* ensures the image fits without distortion */
+}
+
     body {
       font-family: Arial, sans-serif;
       background: #ffe4e1;
@@ -42,7 +48,7 @@
 <body>
   <div>
     <!-- Add your image here --> 
-    <img src="images/amman.jpg" alt="amman image">
+    <img src="images/amman.jpg" alt="amman image" class= "logo">
     <div id="location">Loading location...</div>
     <div id="updated"></div>
   </div>
